@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: rgba(18, 116, 235, 0.507);
+}
+
+header {
+    background-color: #1900ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #9af0ff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.container2{
+    background-image: url(../Poseidon.png);
+    background-size:cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container p {
+    background-color: rgb(255, 255, 255);
+    background-size: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 0 25px 20px 0;
+}
+
+.container li {
+    background-color: white;
+    background-size: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 0 25px 20px 0;
+}
+
+.container h2 {
+
+    margin: 0 0 20px 0;
+}
+
+.container li {
+    margin: 0 25px 10px 15px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 25px 20px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: #01125c85;
+    padding: 50px 0;
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+
+/* responsividade do footer */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: rgba(18, 116, 235, 0.507);
+}
+
+.topo {
+    text-align: center;
+}
+
+.open {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 15px;
+    color: white;
+    padding: 2px 2px 2px;
+}
+
+@font-face {
+    font-family: dalek;
+    src: url(../Dalek.ttf);
+}
+
+@font-face {
+    font-family: rusticus;
+    src: url(../RusticusStd.otf);
+}
+
+header {
+    font-family: dalek;
+    background-image: url('C:\\Users\\edsil\\Desktop\\trabalho2-atualizado-main\\trabalho2-atualizado-main\\Untitled.png');
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    background: linear-gradient(#707070, #000000); /* Use a função linear-gradient para criar um fundo degradê */
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+nav a {
+    background: #00000070;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    text-decoration: underline;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 12px 10px 12px 32px;
+}
+
+nav a:hover {
+    color: #ffb8b8;
+    background-color: rgb(0, 10, 53);
+    padding: 6px 10px 6px 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.container2 {
+    background-image: url(../ilustracao-do-monte-olimpo-com-grandes-templos-e-estetica-moderna-de-criaturas-miticas_818261-5667.avif);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: rusticus;
+}
+
+p {
+    background-color: white;
+    background-size: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+li{
+    background-color: white;
+    background-size: 50px;
+    border-radius: 10px;
+}
+
+#menu {
+    width: 250px;
+}
+
+#conteudo {
+    margin-left: 250px;
+}
+
+/* Media query para telas menores (máximo de 768px) */
+@media (max-width: 768px) {
+    #menu {
+        width: 100%;
+        background: #333; /* Altere a cor de fundo para uma melhor visibilidade */
+    }
+
+    #conteudo {
+        margin-left: 0;
+    }
+
+    header {
+        background-image: url('Caminho-Para-Imagem-Responsiva.jpg'); /* Substitua pelo caminho da imagem de cabeçalho responsiva */
+    }
+
+    /* Outros ajustes de estilo para telas menores */
+}

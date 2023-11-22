@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: rgba(18, 116, 235, 0.507);
+}
+
+/* Menu começa aqui */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(1,8,14);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: rgb(217,255,246);
+    color: rgb(1,8,14);
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(1,8,14);
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: rgb(217,255,246);
+    }   
+}
+
+/* menu termina aqui */
+
+@font-face {
+    font-family: dalek;
+    src: url(../Dalek.ttf);
+}
+
+@font-face {
+    font-family: rusticus;
+    src: url(../RusticusStd.otf);
+}
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.container2 {
+    background-image: url(../ilustracao-do-monte-olimpo-com-grandes-templos-e-estetica-moderna-de-criaturas-miticas_818261-5667.avif);
+    background-size: cover;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 25px 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: rusticus;
+    margin: 0 25px 20px 0;
+}
+
+.container p {
+    background-color: white;
+    background-size: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 0 25px 20px 0;
+}
+.container li{
+    background-color: white;
+    background-size: 50px;
+    border-radius: 10px;
+    margin: 0 25px 10px 15px;
+}
+
+#menu {
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+#conteudo {
+    margin-left: 250px;
+}
+
+/* Media query para telas menores (máximo de 768px) */
+@media (max-width: 768px) {
+    #menu {
+        width: 100%;
+        background: rgba(18, 116, 235, 0.507); /* Altere a cor de fundo para uma melhor visibilidade */
+    }
+
+    #conteudo {
+        margin-left: 0;
+    }
+
+    header {
+        background-image: url('Caminho-Para-Imagem-Responsiva.jpg'); /* Substitua pelo caminho da imagem de cabeçalho responsiva */
+    }
+    
+    /* Outros ajustes de estilo para telas menores */
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+  
+    /*footer começa aqui */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    background-color: rgb(1,8,14);
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h3{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 0;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+      
+
+/* responsividade do footer */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+/* footer termina aqui */
+
+

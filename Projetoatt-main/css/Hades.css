@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a77f7f;
+}
+
+header {
+    background-color: #ac1010;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container p {
+    background-color: rgb(255, 255, 255);
+    background-size: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 0 25px 20px 0;
+}
+
+.container li {
+    background-color: white;
+    background-size: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 0 25px 20px 0;
+}
+
+.container h2 {
+
+    margin: 0 0 20px 0;
+}
+
+.container li {
+    margin: 0 25px 10px 15px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 25px 20px 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: #01125c8a;
+    padding: 50px 0;
+}
+
+.container2 {
+    background-image: url(../Hades.png);
+    background-size: cover;
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+
+/* responsividade do footer */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-col {
+        width: 100%;
+    }
+}

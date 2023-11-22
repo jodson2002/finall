@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tela de Login</title>
+</head>
+
+<body>
+    <h2>Tela de Login</h2>
+    <form id="loginForm">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" required><br><br>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" required><br><br>
+
+        <button type="button" onclick="checkLogin()">Entrar</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        function checkLogin() {
+            // Recuperar os valores do nome de usuário e senha
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Verificar se os requisitos estão corretos (exemplo: username: "admin", password: "senha123")
+            if (username === "admin" && password === "senha123") {
+                document.getElementById("message").innerText = "Login bem-sucedido!";
+                // Redirecionar para a página após o login bem-sucedido
+                // window.location.href = "pagina-de-destino.html";
+            } else {
+                document.getElementById("message").innerText = "Nome de usuário ou senha incorretos. Tente novamente.";
+            }
+        }
+    </script>
+</body>
+
+</html>
